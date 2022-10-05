@@ -1,0 +1,19 @@
+server:
+  port: 8005
+  servlet:
+    context-path: /client
+spring:
+  profiles:
+    active: dev
+
+  application:
+    name: +
+
+  cloud:
+    #注册到服务中心
+    nacos:
+      discovery:
+        server-addr: 47.106.187.129:8848
+      config:
+        server-addr: 47.106.187.129:8848
+        file-extension: yaml
